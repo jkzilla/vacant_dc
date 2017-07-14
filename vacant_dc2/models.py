@@ -4,6 +4,16 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
+# from django.contrib.gis.db import models
+
+# class Zipcode(models.Model):
+#     code = models.CharField(max_length=5)
+#     poly = models.PolygonField()
+
+# class Elevation(models.Model):
+#     name = models.CharField(max_length=100)
+#     rast = models.RasterField()
+
 class VacantLocation(models.Model):
 	""" CSV Data Fields, Example
 	XCoord, -77.00836160
