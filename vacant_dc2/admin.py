@@ -8,4 +8,3 @@ from .models import VacantLocation
 # Register your models here.
 admin.site.register(VacantLocation)
 
-sin.site.register(VacantLocation)
