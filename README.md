@@ -3,13 +3,13 @@
 To run this application from your local machine:
 
 ```
-$ python manage.py runserver
+python manage.py runserver
 ```
 
 Access the database:
 
 ```
-$ psql vacant_dc
+psql vacant_dc
 ```
 
 User:
