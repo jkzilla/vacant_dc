@@ -73,17 +73,16 @@ WSGI_APPLICATION = 'vacant_dc.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': os.path.join(BASE_DIR, 'db.postgres'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'vacant_dc',
-        'USER': 'vacant_dc',
-        'PASSWORD': 'password'
+        'USER': 'vacant_dc_user',
+        'PASSWORD': 'password123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

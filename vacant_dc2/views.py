@@ -6,6 +6,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 from .models import VacantLocation 
+# EXAMPLES
 # polls/views.py
 # def detail(request, question_id):
 #     return HttpResponse("You're looking at question %s." % question_id)
@@ -33,9 +34,9 @@ from .models import VacantLocation
 
 
 def index(request):
-	vacant_locations = VacantLocation.objects.order_by([:5])
+	vacant_locations = VacantLocation.objects.order_by()
 	template = loader.get_template('vacant_dc2/index.html')
 	context = { 
 	'vacant_locations': vacant_locations,
 	 }
-    return HttpResponse(template.render(context, request))
+	return HttpResponse(template.render(context, request))
