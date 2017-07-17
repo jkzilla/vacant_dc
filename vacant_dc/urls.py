@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^vacant_dc2/', include('vacant_dc2.urls')),
+    url(r'^vacant-dc/', include('vacant-dc.urls')),
     url(r'^admin/', admin.site.urls),
 ]

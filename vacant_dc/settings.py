@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'vacant_dc2.apps.VacantDc2Config',
+    'vacant-dc.apps.VacantDc2Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vacant_dc.wsgi.application'
+WSGI_APPLICATION = 'vacant-dc.wsgi.application'
 
 
 # Database
