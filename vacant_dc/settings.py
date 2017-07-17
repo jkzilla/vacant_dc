@@ -121,3 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#  parse the values of the DATABASE_URL environment variable and convert them to something Django can understand then set the engine to take advantage of PostGIS
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
+DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
