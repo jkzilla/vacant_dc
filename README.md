@@ -2,8 +2,6 @@
 
 Vacant DC shows vacant retail locations across Washington, D.C.
 
-Detailed documentation is in the "docs" directory.
-
 ## Quick start
 
 
